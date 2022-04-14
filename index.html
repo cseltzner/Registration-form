@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Sign up!</title>
 </head>
 <body>
@@ -12,8 +13,10 @@
             <img src="sun.svg" alt="Logo" class="logo">
             <div class="logo-text">CHASE</div>
         </div>
+        <div class="attribution">Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
     </header>
     <main>
+        <a href="https://www.github.com/cseltzner"><img src="github.svg" alt="github"></a>
         <div class="header-container">
             <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
             <p>Sign up <em>now</em> to get started.</p>
@@ -23,25 +26,35 @@
             <div class="form-header">Let's do this!</div>
             <form action="#" method="post" id="register-form">
                 <div class="form-row-1">
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="first-name" id="first-name">
-                    
-                    <label for="last-name">Last Name</label>
-                    <input type="text" name="last-name" id="last-name">
+                    <div class="form-item-1">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name">    
+                    </div>
+                    <div class="form-item-2">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name">    
+                    </div>
                 </div>
                 <div class="form-row-2">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-
-                    <label for="tel">Phone Number</label>
-                    <input type="tel" name="tel" id="tel">
+                    <div class="form-item-3">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">    
+                    </div>
+                    <div class="form-item-4">
+                        <label for="tel">Phone Number</label>
+                        <input type="tel" name="tel" id="tel">    
+                    </div>
                 </div>
                 <div class="form-row-3">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
+                    <div class="form-item-5">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">    
+                    </div>
 
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" name="confirm-password" id="confirm-password">
+                    <div class="form-item-6">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" name="confirm-password" id="confirm-password">    
+                    </div>
                 </div>
             </form>
         </div>
