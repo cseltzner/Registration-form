@@ -24,6 +24,14 @@ html, body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+span {
+    color: red;
+}
+
+fieldset {
+    border: none;
+}
+
 body {
     display: flex;
 }
@@ -123,6 +131,7 @@ main a img {
     font-size: 1.5rem;
     font-weight: 500;
     justify-self: start;
+    margin-bottom: 4px;
 }
 
 .form-row-1, .form-row-2, .form-row-3 {
@@ -162,6 +171,10 @@ form input {
 
 form input:hover{
     box-shadow: rgb(231 238 236) 0px 0px 0px 3px;
+}
+
+form input:invalid {
+    border: 1px solid rgb(225, 50, 50);
 }
 
 .post-form-container {

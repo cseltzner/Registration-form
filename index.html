@@ -24,37 +24,37 @@
         </div>
         <div class="form-container">
             <div class="form-header">Let's do this!</div>
+            <div class="required-header"><span class="required">*</span> = required field</div>
             <form action="#" method="post" id="register-form">
                 <div class="form-row-1">
-                    <div class="form-item-1">
-                        <label for="first-name">First Name</label>
-                        <input type="text" name="first-name" id="first-name">    
-                    </div>
-                    <div class="form-item-2">
-                        <label for="last-name">Last Name</label>
-                        <input type="text" name="last-name" id="last-name">    
-                    </div>
+                    <fieldset class="form-item-1">
+                        <label for="first-name">First Name<span class="required">*</span></label>
+                        <input type="text" name="first-name" id="first-name" required="true" >    
+                    </fieldset>
+                    <fieldset class="form-item-2">
+                        <label for="last-name">Last Name<span class="required">*</span></label>
+                        <input type="text" name="last-name" id="last-name" required="true">    
+                    </fieldset>
                 </div>
                 <div class="form-row-2">
-                    <div class="form-item-3">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">    
-                    </div>
-                    <div class="form-item-4">
+                    <fieldset class="form-item-3">
+                        <label for="email">Email<span class="required">*</span></label>
+                        <input type="email" name="email" id="email" required="true" placeholder="abc@example.com">    
+                    </fieldset>
+                    <fieldset class="form-item-4">
                         <label for="tel">Phone Number</label>
                         <input type="tel" name="tel" id="tel">    
-                    </div>
+                    </fieldset>
                 </div>
                 <div class="form-row-3">
-                    <div class="form-item-5">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password">    
-                    </div>
-
-                    <div class="form-item-6">
-                        <label for="confirm-password">Confirm Password</label>
-                        <input type="password" name="confirm-password" id="confirm-password">    
-                    </div>
+                    <fieldset class="form-item-5">
+                        <label for="password">Password<span class="required">*</span></label>
+                        <input type="password" name="password" id="password" required="true" placeholder="At least 8 characters" min="8" max="24">    
+                    </fieldset>
+                    <fieldset class="form-item-6">
+                        <label for="confirm-password">Confirm Password<span class="required">*</span></label>
+                        <input type="password" name="confirm-password" id="confirm-password" required="true">    
+                    </fieldset>
                 </div>
             </form>
         </div>
